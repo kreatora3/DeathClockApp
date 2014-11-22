@@ -126,7 +126,7 @@
 
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="10,261,0,0" Grid.Row="2" VerticalAlignment="Top" Width="40" Source="Assets/wine-glass-003.jpg"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="10,322,0,0" Grid.Row="2" VerticalAlignment="Top" Width="40" Source="Assets/water-glass.jpg" RenderTransformOrigin="-1.094,0.146" Stretch="Fill"/>
-        <Button Content="Dare to calculate ... ?" HorizontalAlignment="Left" Margin="95,409,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="213" Height="54" Background="Transparent" BorderBrush="#33FFFFFF" FontStyle="Italic"/>
+        <Button Content="Dare to calculate ... ?" HorizontalAlignment="Left" Margin="95,409,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="213" Height="54" Background="Transparent" BorderBrush="#33FFFFFF" FontStyle="Italic" Click="Button_Click"/>
 
     </Grid>
 </Page>

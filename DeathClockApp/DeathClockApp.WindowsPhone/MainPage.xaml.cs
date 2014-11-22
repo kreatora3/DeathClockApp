@@ -24,12 +24,13 @@ namespace DeathClockApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        SoundPlayer sp = new SoundPlayer();
         public MainPage()
         {
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            PlayMedia("ms-appx:///welcome.mp3");
+            sp.PlayMedia("ms-appx:///welcome.mp3");
         }
 
         /// <summary>
@@ -52,7 +53,7 @@ namespace DeathClockApp
         {
             if (ageTextBox.Text != string.Empty)
             {
-                PlayMedia("ms-appx:///door.mp3");
+                sp.PlayMedia("ms-appx:///door.mp3");
                 Frame.Navigate(typeof(QuestionPage), ageTextBox.Text);
             }
             else
@@ -62,15 +63,7 @@ namespace DeathClockApp
            
         }
 
-        private void PlayMedia(string path)
-        {
-            if (BackgroundMediaPlayer.Current.CurrentState != MediaPlayerState.Paused)
-            {
-                BackgroundMediaPlayer.Current.SetUriSource(new Uri(path));
-            }
-            BackgroundMediaPlayer.Current.Play();
-
-        }
+       
 
         private void ShowMessageBox(string message, string title)
         {

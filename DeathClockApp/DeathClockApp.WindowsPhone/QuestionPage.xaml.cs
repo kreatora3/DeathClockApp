@@ -25,6 +25,7 @@ namespace DeathClockApp
     /// </summary>
     public sealed partial class QuestionPage : Page
     {
+        SoundPlayer sp = new SoundPlayer();
         public QuestionPage()
         {
             this.InitializeComponent();
@@ -56,6 +57,11 @@ namespace DeathClockApp
             //msgDialog.Commands.Add(cancelBtn);
 
             msgDialog.ShowAsync();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            sp.PlayMedia("ms-appx:///laugh.mp3");
         }
 
       
