@@ -1,0 +1,1 @@
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\DeathClockApp.WindowsPhone.csproj;neutral

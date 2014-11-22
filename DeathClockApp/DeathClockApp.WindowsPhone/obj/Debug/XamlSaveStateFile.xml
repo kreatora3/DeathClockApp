@@ -1,4 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\kreatora3\documents\visual studio 2013\projects\deathclockapp\deathclockapp\deathclockapp.windowsphone\obj\debug\intermediatexaml\deathclockapp.windowsphone.exe" HashGuid="ccc102af-df60-8a90-2abf-e9620ce483d0" />
+    <ReferenceAssembly PathName="c:\users\kreatora3\documents\visual studio 2013\projects\deathclockapp\deathclockapp\deathclockapp.shared\parse.dll" HashGuid="4aa23e2f-e4a0-423c-41b6-d3a8bf370a51" />
+    <ReferenceAssembly PathName="c:\users\kreatora3\documents\visual studio 2013\projects\deathclockapp\deathclockapp\deathclockapp.shared\parse.winrt.dll" HashGuid="686a4480-5b84-291b-04f2-3ed7db81ad6f" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

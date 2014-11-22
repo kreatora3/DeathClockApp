@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -43,6 +44,34 @@ namespace DeathClockApp
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (ageTextBox.Text != string.Empty)
+            {
+                Frame.Navigate(typeof(QuestionPage), ageTextBox.Text);
+            }
+            else
+            {
+                ShowMessageBox("This will cost you 1 year ...", "Warning");
+            }
+           
+        }
+
+        private void ShowMessageBox(string message, string title)
+        {
+            MessageDialog msgDialog = new MessageDialog(message, title);
+
+            //OK Button
+            UICommand okBtn = new UICommand("OK");
+            msgDialog.Commands.Add(okBtn);
+
+            //Cancel Button
+            //UICommand cancelBtn = new UICommand("Cancel");           
+            //msgDialog.Commands.Add(cancelBtn);
+
+            msgDialog.ShowAsync();
         }
     }
 }
