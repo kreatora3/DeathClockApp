@@ -35,3 +35,7 @@ C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathCloc
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\QuestionPage.g.cs
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\QuestionPage.xaml
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\QuestionPage.xbf
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\DeathClockApp.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\Parse.dll
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\Parse.WinRT.dll
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\DeathClockApp.WindowsPhone.csproj.GenerateResource.Cache

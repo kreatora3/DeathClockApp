@@ -19,6 +19,12 @@
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\bin\Debug\DeathClockApp.Windows.exe">
       <PackagePath>DeathClockApp.Windows.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Shared\Parse.dll">
+      <PackagePath>Parse.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\Parse.WinRT.dll">
+      <PackagePath>Parse.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

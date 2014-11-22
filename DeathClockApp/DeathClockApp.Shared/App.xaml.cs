@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
-
+using Parse;
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
 namespace DeathClockApp
@@ -37,6 +37,7 @@ namespace DeathClockApp
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            ParseClient.Initialize("OYZflL4CS84RtrCeMQpSMMdzuDkrzlJnENsl09LF", "4qNZ2t3aOXHzxI4sAPgYgHTHD3mZBjDDw4dmGbXA");
         }
 
         /// <summary>

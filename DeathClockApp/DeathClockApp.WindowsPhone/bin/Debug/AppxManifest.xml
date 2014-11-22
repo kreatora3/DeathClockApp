@@ -30,10 +30,25 @@
           <m3:Rotation Preference="portrait" />
         </m3:InitialRotationPreference>
       </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileOpenPicker">
+          <FileOpenPicker>
+            <SupportedFileTypes>
+              <FileType>.mp3</FileType>
+            </SupportedFileTypes>
+          </FileOpenPicker>
+        </Extension>
+        <Extension Category="windows.backgroundTasks" EntryPoint="DeathClockApp.QuestionPage">
+          <BackgroundTasks>
+            <Task Type="audio" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <Capability Name="musicLibrary" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="38842894-9c0c-4fc6-b4ba-bbe74393d109" />

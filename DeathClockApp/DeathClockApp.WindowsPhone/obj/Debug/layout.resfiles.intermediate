@@ -1,4 +1,5 @@
 Assets\allowSmoking.jpg
+Assets\cemetary-gates.jpg
 Assets\halloween_at_the_graveyard.jpg
 Assets\Logo.scale-100.png
 Assets\Logo.scale-240.png
@@ -8,11 +9,14 @@ Assets\SplashScreen.scale-240.png
 Assets\Square71x71Logo.scale-240.png
 Assets\SsplashScreen.scale-240.png
 Assets\StoreLogo.scale-240.png
-Assets\water-in-glass.jpg
+Assets\water-glass.jpg
 Assets\WideLogo.scale-240.png
 Assets\wine-glass-003.jpg
 App.xbf
 DeathClockApp.WindowsPhone.xr.xml
 MainPage.xbf
 QuestionPage.xbf
+door.mp3
+laugh.mp3
 StoreManifest.xml
+welcome.mp3

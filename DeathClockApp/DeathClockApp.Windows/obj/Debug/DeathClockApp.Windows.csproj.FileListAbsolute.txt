@@ -30,3 +30,7 @@ C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathCloc
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\obj\Debug\qualifiers.txt.intermediate
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\bin\Debug\Parse.dll
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\bin\Debug\Parse.WinRT.dll
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\obj\Debug\DeathClockApp.Windows.csprojResolveAssemblyReference.cache
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.Windows\obj\Debug\DeathClockApp.Windows.csproj.GenerateResource.Cache

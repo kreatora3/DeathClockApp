@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.Playback;
+using Windows.Storage;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -33,15 +35,13 @@ namespace DeathClockApp
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected  override void OnNavigatedTo(NavigationEventArgs e)
         {
             var age = e.Parameter.ToString();
-            headerTextBlock.Text = "So you are ... " + age;
-
-            
+            headerTextBlock.Text = "So you are ... " + age + " years old";
         }
 
-       
+        
 
         private void ShowMessageBox(string message, string title)
         {
@@ -58,9 +58,8 @@ namespace DeathClockApp
             msgDialog.ShowAsync();
         }
 
-        private void Grid_DragOver(object sender, DragEventArgs e)
-        {
-            Frame.Navigate(typeof(MainPage));
-        }
+      
+
+       
     }
 }
