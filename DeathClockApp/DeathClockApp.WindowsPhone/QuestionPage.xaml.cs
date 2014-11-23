@@ -25,10 +25,15 @@ namespace DeathClockApp
     /// </summary>
     public sealed partial class QuestionPage : Page
     {
-        SoundPlayer sp = new SoundPlayer();
+        private SoundPlayer sp;
+        private Life life;
+        private string age;
+
         public QuestionPage()
         {
             this.InitializeComponent();
+            this.sp = new SoundPlayer();
+            this.life = new Life();
         }
 
         /// <summary>
@@ -38,7 +43,7 @@ namespace DeathClockApp
         /// This parameter is typically used to configure the page.</param>
         protected  override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var age = e.Parameter.ToString();
+             age = e.Parameter.ToString();
             headerTextBlock.Text = "So you are ... " + age + " years old";
         }
 
@@ -61,13 +66,34 @@ namespace DeathClockApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            bool isTabacoUser = false;
+            bool isAlchohilUser = false;
 
-           var radio = QuestionPageGrid.Children.OfType<RadioButton>().First(r =>  r.GroupName == "drinking" && r.IsChecked == true);
-           if (radio != null)
-           {
-               headerTextBlock.Text = radio.Name;
-           }
-            sp.PlayMedia("ms-appx:///laugh.mp3");
+            var btnDrinkingYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "drinkingYes");
+            var btnDrinkingNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name ==  "drinkingNo");
+            var btnTabacoYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoYes");
+            var btnTabacoNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoNo");
+            
+            if (btnDrinkingYes.IsChecked == true)
+            {
+                isAlchohilUser = true;
+            }
+
+            if (btnTabacoYes.IsChecked == true)
+            {
+                isTabacoUser = true;
+            }
+
+            if (btnTabacoYes.IsChecked != true && btnTabacoNo.IsChecked != true
+                && btnDrinkingYes.IsChecked != true && btnDrinkingNo.IsChecked != true)
+            {
+                ShowMessageBox("Make sure you've answered both questions", "Warning");
+            }
+           
+            var secondsToDisplay = life.CalculateTimeToTheEnd(age, isAlchohilUser, isTabacoUser);
+        
+            sp.PlayMedia("ms-appx:///sounds/laugh.mp3");
+            Frame.Navigate(typeof(CountdownPage), secondsToDisplay);
         }
 
       

@@ -59,7 +59,7 @@
                    RenderTransformOrigin="0.521,-1.276"
                    FontSize="25" FontStyle="Italic"/>
 
-        <RadioButton Content="Yes"
+        <RadioButton x:Name="tabacoYes" Content="Yes"
                      HorizontalAlignment="Left" 
                      Margin="0,56,0,0" 
                      Grid.Row="2" 
@@ -69,7 +69,7 @@
                      Background="Transparent"
                      GroupName="smoking"/>
 
-        <RadioButton Content="No"
+        <RadioButton x:Name="tabacoNo" Content="No"
                      HorizontalAlignment="Left" 
                      Margin="0,117,0,0" 
                      Grid.Row="2"

@@ -80,6 +80,10 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CountdownPage.xaml.cs">
+      <DependentUpon>CountdownPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Life.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -109,12 +113,16 @@
     <Content Include="Assets\water-glass.jpg" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="Assets\wine-glass-003.jpg" />
-    <Content Include="door.mp3" />
-    <Content Include="laugh.mp3" />
+    <Content Include="sounds\door.mp3" />
+    <Content Include="sounds\laugh.mp3" />
     <Content Include="StoreManifest.xml" />
-    <Content Include="welcome.mp3" />
+    <Content Include="sounds\welcome.mp3" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="CountdownPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

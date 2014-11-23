@@ -529,3 +529,4 @@ namespace DeathClockApp.DeathClockApp_Windows_XamlTypeInfo
 }
 
 
+

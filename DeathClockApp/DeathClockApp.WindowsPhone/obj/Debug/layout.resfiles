@@ -13,10 +13,11 @@ Assets\water-glass.jpg
 Assets\WideLogo.scale-240.png
 Assets\wine-glass-003.jpg
 App.xbf
+CountdownPage.xbf
 DeathClockApp.WindowsPhone.xr.xml
 MainPage.xbf
 QuestionPage.xbf
-door.mp3
-laugh.mp3
+sounds\door.mp3
+sounds\laugh.mp3
+sounds\welcome.mp3
 StoreManifest.xml
-welcome.mp3

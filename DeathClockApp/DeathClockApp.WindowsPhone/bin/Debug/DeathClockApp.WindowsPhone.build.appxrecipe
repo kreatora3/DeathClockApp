@@ -74,20 +74,23 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\door.mp3">
-      <PackagePath>door.mp3</PackagePath>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\sounds\door.mp3">
+      <PackagePath>sounds\door.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\laugh.mp3">
-      <PackagePath>laugh.mp3</PackagePath>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\sounds\laugh.mp3">
+      <PackagePath>sounds\laugh.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\welcome.mp3">
-      <PackagePath>welcome.mp3</PackagePath>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\sounds\welcome.mp3">
+      <PackagePath>sounds\welcome.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\StoreManifest.xml">
       <PackagePath>StoreManifest.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\CountdownPage.xbf">
+      <PackagePath>CountdownPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

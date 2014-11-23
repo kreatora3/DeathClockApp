@@ -39,3 +39,8 @@ C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathCloc
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\Parse.dll
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\Parse.WinRT.dll
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\DeathClockApp.WindowsPhone.csproj.GenerateResource.Cache
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\CountdownPage.xbf
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CountdownPage.g.i.cs
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CountdownPage.g.cs
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CountdownPage.xaml
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CountdownPage.xbf
