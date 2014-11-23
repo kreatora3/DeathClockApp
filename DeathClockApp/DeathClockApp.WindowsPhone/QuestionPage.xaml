@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="QuestionPageGrid">
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/cemetary-gates.jpg"/>
         </Grid.Background>
@@ -108,7 +108,7 @@
                    FontStyle="Italic"
                    FontSize="25"/>
 
-        <RadioButton Content="Yes"
+        <RadioButton x:Name="drinkingYes" Content="Yes"
                      HorizontalAlignment="Left"
                      Margin="0,245,0,0" 
                      Grid.Row="2" 
@@ -116,7 +116,7 @@
                      Width="200"
                       GroupName="drinking"/>
 
-        <RadioButton Content="No" 
+        <RadioButton x:Name="drinkingNo" Content="No" 
                      HorizontalAlignment="Left"                     
                      Margin="0,306,0,0" 
                      Grid.Row="2"

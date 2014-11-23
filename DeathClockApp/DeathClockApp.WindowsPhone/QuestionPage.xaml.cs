@@ -61,6 +61,12 @@ namespace DeathClockApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+           var radio = QuestionPageGrid.Children.OfType<RadioButton>().First(r =>  r.GroupName == "drinking" && r.IsChecked == true);
+           if (radio != null)
+           {
+               headerTextBlock.Text = radio.Name;
+           }
             sp.PlayMedia("ms-appx:///laugh.mp3");
         }
 
