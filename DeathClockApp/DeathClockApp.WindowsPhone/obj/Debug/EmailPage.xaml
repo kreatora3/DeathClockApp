@@ -9,7 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:ConnectionId='1' Content="Button" HorizontalAlignment="Left" Margin="131,223,0,0" VerticalAlignment="Top"                     />
+        <Button x:ConnectionId='1' x:Name="continueBtn" Content="Continue" HorizontalAlignment="Left" Margin="138,386,0,0" VerticalAlignment="Top"                     />
+        <TextBox x:Name="emailInputField" 
+                 HorizontalAlignment="Left"
+                 Margin="78,298,0,0" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="255" 
+                 PlaceholderText="joe@doe.com" 
+                 InputScope="EmailSmtpAddress"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,68,0,0" TextWrapping="Wrap" Text="One final step before we proceed further ..." VerticalAlignment="Top" Height="145" Width="400" FontSize="25" MaxLines="5" TextAlignment="Center" FontWeight="Bold"/>
 
     </Grid>
 </Page>

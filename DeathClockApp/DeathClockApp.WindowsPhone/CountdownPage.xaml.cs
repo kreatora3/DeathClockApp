@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Calls;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -70,6 +71,11 @@ namespace DeathClockApp
                 countdownTimer.Text = "" + seconds;
             }
            
+        }
+
+        private void StackPanel_Holding(object sender, HoldingRoutedEventArgs e)
+        {
+            PhoneCallManager.ShowPhoneCallUI(this.Phone.Text, "Vanga");  
         }
 
      

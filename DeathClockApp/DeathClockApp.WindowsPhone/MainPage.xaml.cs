@@ -26,11 +26,13 @@ namespace DeathClockApp
     public sealed partial class MainPage : Page
     {
         SoundPlayer sp;
+        NotificationHelper dialog;
 
         public MainPage()
         {
             this.InitializeComponent();
             this.sp = new SoundPlayer();
+            this.dialog = new NotificationHelper();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             sp.PlayMedia("ms-appx:///sounds/welcome.mp3");
         }
@@ -49,7 +51,7 @@ namespace DeathClockApp
             
             if (double.Parse(ageTextBox.Text, nfi) > 120)
             {
-                ShowMessageBox("You are not a human ...", "Warning");
+                dialog.ShowMessageBox("You are not a human ...", "Warning");
             }
             else if (ageTextBox.Text != string.Empty)
             {
@@ -58,26 +60,26 @@ namespace DeathClockApp
             }
             else
             {
-                ShowMessageBox("This will cost you 1 year ...", "Warning");
+                dialog.ShowMessageBox("This will cost you 1 year ...", "Warning");
             }
            
         }
 
        
 
-        private void ShowMessageBox(string message, string title)
-        {
-            MessageDialog msgDialog = new MessageDialog(message, title);
+        //private void ShowMessageBox(string message, string title)
+        //{
+        //    MessageDialog msgDialog = new MessageDialog(message, title);
 
-            //OK Button
-            UICommand okBtn = new UICommand("OK");
-            msgDialog.Commands.Add(okBtn);
+        //    //OK Button
+        //    UICommand okBtn = new UICommand("OK");
+        //    msgDialog.Commands.Add(okBtn);
 
-            //Cancel Button
-            //UICommand cancelBtn = new UICommand("Cancel");           
-            //msgDialog.Commands.Add(cancelBtn);
+        //    //Cancel Button
+        //    //UICommand cancelBtn = new UICommand("Cancel");           
+        //    //msgDialog.Commands.Add(cancelBtn);
 
-            msgDialog.ShowAsync();
-        }
+        //    msgDialog.ShowAsync();
+        //}
     }
 }

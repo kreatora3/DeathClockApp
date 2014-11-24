@@ -26,7 +26,17 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <TextBox x:Name="ageTextBox" HorizontalAlignment="Left" Margin="147.139,455.679,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="42.999" UseLayoutRounding="False" d:LayoutRounding="Auto" InputScope="NumberFullWidth" Width="105.827" Foreground="#FF060606" FontSize="20" FontWeight="Bold" Background="#FFFBF5F5">
+        <TextBox x:Name="ageTextBox" 
+                 HorizontalAlignment="Left" 
+                 Margin="147.139,455.679,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 RenderTransformOrigin="0.5,0.5" 
+                 Height="42.999" 
+                 UseLayoutRounding="False" 
+                 d:LayoutRounding="Auto" 
+                 InputScope="NumberFullWidth"
+                 Width="105.827" Foreground="#FF060606" FontSize="20" FontWeight="Bold" Background="#FFFBF5F5">
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="1"/>
