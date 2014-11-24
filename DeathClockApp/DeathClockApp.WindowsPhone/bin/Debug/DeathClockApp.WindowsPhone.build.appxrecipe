@@ -31,6 +31,12 @@
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\Assets\cemetary-gates.jpg">
       <PackagePath>Assets\cemetary-gates.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\Assets\FIre.jpg">
+      <PackagePath>Assets\FIre.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\Assets\fire2.jpg">
+      <PackagePath>Assets\fire2.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\Assets\halloween_at_the_graveyard.jpg">
       <PackagePath>Assets\halloween_at_the_graveyard.jpg</PackagePath>
     </AppxPackagedFile>

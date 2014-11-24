@@ -101,6 +101,8 @@
   <ItemGroup>
     <Content Include="Assets\allowSmoking.jpg" />
     <Content Include="Assets\cemetary-gates.jpg" />
+    <Content Include="Assets\FIre.jpg" />
+    <Content Include="Assets\fire2.jpg" />
     <Content Include="Assets\halloween_at_the_graveyard.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\Logo.scale-240.png" />

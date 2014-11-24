@@ -41,6 +41,25 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
+        <TextBlock Name="MyFadingText"  HorizontalAlignment="Left" Margin="0,484,0,0" TextWrapping="Wrap" Text="Enjoy your life !" VerticalAlignment="Top" Height="156" Width="400" FontSize="40" RenderTransformOrigin="0.5,0.5" Padding="0,50,0,0" UseLayoutRounding="True" FontWeight="Bold" TextAlignment="Center">
+            <TextBlock.Foreground>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/fire2.jpg"/>
+            </TextBlock.Foreground>
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+            Storyboard.TargetName="MyFadingText" 
+            Storyboard.TargetProperty="(TextBlock.Opacity)"
+            From="1.0" To="0.3" Duration="0:0:3" 
+            AutoReverse="True" RepeatBehavior="Forever" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+
 
     </Grid>
 </Page>
