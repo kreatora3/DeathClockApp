@@ -54,7 +54,7 @@ namespace DeathClockApp
             int minutes = 60;
             int seconds = 60;
            
-            long result = yearsLeft * days * hours * minutes * seconds;
+            long result = (long)yearsLeft * (long)days * (long)hours * (long)minutes * (long)seconds;
 
             return result;
         }
