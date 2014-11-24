@@ -37,6 +37,9 @@
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\Assets\noSmoking.jpg">
       <PackagePath>Assets\noSmoking.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\Assets\reaper.jpg">
+      <PackagePath>Assets\reaper.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\Assets\water-glass.jpg">
       <PackagePath>Assets\water-glass.jpg</PackagePath>
     </AppxPackagedFile>

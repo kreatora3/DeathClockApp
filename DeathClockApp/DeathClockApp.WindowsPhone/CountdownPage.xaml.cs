@@ -22,7 +22,7 @@ namespace DeathClockApp
     /// </summary>
     public sealed partial class CountdownPage : Page
     {
-        private uint seconds;
+        private long seconds;
         DispatcherTimer dispatch;
        
 
@@ -30,8 +30,6 @@ namespace DeathClockApp
         {
             this.InitializeComponent();
             this.dispatch = new DispatcherTimer();
-            
-
         }
 
         /// <summary>
@@ -41,7 +39,7 @@ namespace DeathClockApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            seconds =(uint)e.Parameter;
+            seconds =(long)e.Parameter;
         }
 
         
@@ -58,7 +56,15 @@ namespace DeathClockApp
         void dispatch_Tick(object sender, object e)
         {
             seconds--;
-            countdownTimer.Text = "" + seconds;
+            if (seconds < 0)
+            {
+                countdownTimer.Text = "You are out of life :(";
+            }
+            else
+            {
+                countdownTimer.Text = "" + seconds;
+            }
+           
         }
 
      

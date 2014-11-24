@@ -43,7 +43,7 @@ namespace DeathClockApp
         /// This parameter is typically used to configure the page.</param>
         protected  override void OnNavigatedTo(NavigationEventArgs e)
         {
-             age = e.Parameter.ToString();
+            age = e.Parameter.ToString();
             headerTextBlock.Text = "So you are ... " + age + " years old";
         }
 
@@ -84,16 +84,23 @@ namespace DeathClockApp
                 isTabacoUser = true;
             }
 
-            if (btnTabacoYes.IsChecked != true && btnTabacoNo.IsChecked != true
-                && btnDrinkingYes.IsChecked != true && btnDrinkingNo.IsChecked != true)
+            if (btnDrinkingYes.IsChecked != true && btnDrinkingNo.IsChecked != true)
             {
                 ShowMessageBox("Make sure you've answered both questions", "Warning");
             }
+            else if (btnTabacoYes.IsChecked != true && btnTabacoNo.IsChecked != true)
+            {
+                ShowMessageBox("Make sure you've answered both questions", "Warning");
+            }
+            else
+            {
+                long secondsToDisplay = life.CalculateTimeToTheEnd(age, isAlchohilUser, isTabacoUser);
+
+                sp.PlayMedia("ms-appx:///sounds/laugh.mp3");
+                Frame.Navigate(typeof(CountdownPage), secondsToDisplay);
+            }
            
-            var secondsToDisplay = life.CalculateTimeToTheEnd(age, isAlchohilUser, isTabacoUser);
-        
-            sp.PlayMedia("ms-appx:///sounds/laugh.mp3");
-            Frame.Navigate(typeof(CountdownPage), secondsToDisplay);
+           
         }
 
       

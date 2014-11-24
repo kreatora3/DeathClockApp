@@ -8,9 +8,10 @@ namespace DeathClockApp
 {
     class Life
     {
-        private const uint lifeExpectancy = 85;
-        private const uint tabacoDamage = 3;
-        private const uint alchoholDamage = 2;
+        private const int maxLifeExpectancy = 120;
+        private const int averageLifeExpectancy = 85;
+        private const int tabacoDamage = 3;
+        private const int alchoholDamage = 2;
 
 
         public Life()
@@ -18,12 +19,24 @@ namespace DeathClockApp
             
         }
 
-        public uint CalculateTimeToTheEnd(string age, bool usesTabaco, bool usesAlchohol)
+        public long CalculateTimeToTheEnd(string age, bool usesTabaco, bool usesAlchohol)
         {
-            uint ageAsInt =0;
-            uint.TryParse(age, out ageAsInt);
+            int ageAsInt = 0;
+            int personalLifeLimit = 0;
+            
+            int.TryParse(age, out ageAsInt);
 
-            uint yearsLeft = lifeExpectancy - ageAsInt;
+           
+            if (ageAsInt > averageLifeExpectancy)
+            {
+                personalLifeLimit = new Random().Next(ageAsInt, maxLifeExpectancy);
+            }
+            else
+            {
+                personalLifeLimit = new Random().Next(averageLifeExpectancy, maxLifeExpectancy);
+            }
+            int yearsLeft = personalLifeLimit - ageAsInt;
+
 
             if (usesTabaco)
             {
@@ -34,11 +47,16 @@ namespace DeathClockApp
             {
                 yearsLeft -= alchoholDamage;
             }
-            uint days = 365;
-            uint hours = 24;
-            uint seconds = 60;
+
+            
+            int days = 365;
+            int hours = 24;
+            int minutes = 60;
+            int seconds = 60;
            
-            return yearsLeft * days * hours * seconds;
+            long result = yearsLeft * days * hours * minutes * seconds;
+
+            return result;
         }
     }
 }

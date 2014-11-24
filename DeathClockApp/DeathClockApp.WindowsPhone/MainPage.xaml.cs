@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +26,7 @@ namespace DeathClockApp
     public sealed partial class MainPage : Page
     {
         SoundPlayer sp;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -33,25 +35,23 @@ namespace DeathClockApp
             sp.PlayMedia("ms-appx:///sounds/welcome.mp3");
         }
 
-        /// <summary>
-        /// Invoked when this page is about to be displayed in a Frame.
-        /// </summary>
-        /// <param name="e">Event data that describes how this page was reached.
-        /// This parameter is typically used to configure the page.</param>
+        
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // TODO: Prepare page for display here.
-
-            // TODO: If your application contains multiple pages, ensure that you are
-            // handling the hardware Back button by registering for the
-            // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
-            // If you are using the NavigationHelper provided by some templates,
-            // this event is handled for you.
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (ageTextBox.Text != string.Empty)
+            var nfi = new NumberFormatInfo
+            {
+                NumberDecimalSeparator = ","
+            };
+            
+            if (double.Parse(ageTextBox.Text, nfi) > 120)
+            {
+                ShowMessageBox("You are not a human ...", "Warning");
+            }
+            else if (ageTextBox.Text != string.Empty)
             {
                 sp.PlayMedia("ms-appx:///sounds/door.mp3");
                 Frame.Navigate(typeof(QuestionPage), ageTextBox.Text);
