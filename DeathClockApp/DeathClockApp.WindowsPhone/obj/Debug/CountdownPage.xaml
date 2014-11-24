@@ -33,7 +33,19 @@
                 <ImageBrush Stretch="Fill" ImageSource="Assets/reaper.jpg"/>
             </StackPanel.Background>
         </StackPanel>
-        <TextBlock HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" Text="Seconds left ..." VerticalAlignment="Top" Height="83" Width="390" FontSize="35" FontWeight="Bold" FontStyle="Italic" FontFamily="Segoe WP" CharacterSpacing="4" Padding="0,14,0,0" TextAlignment="Center">
+        <TextBlock 
+            HorizontalAlignment="Left"
+                   Margin="10,198,0,0"
+                   TextWrapping="Wrap"
+                   Text="Seconds left ..." 
+                   VerticalAlignment="Top" 
+                   Height="83" Width="390" 
+                   FontSize="35" FontWeight="Bold" 
+                   FontStyle="Italic" 
+                   FontFamily="Segoe WP" 
+                   CharacterSpacing="4" 
+                   Padding="0,14,0,0" 
+                   TextAlignment="Center">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -41,7 +53,18 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <TextBlock Name="MyFadingText"  HorizontalAlignment="Left" Margin="0,484,0,0" TextWrapping="Wrap" Text="Enjoy your life !" VerticalAlignment="Top" Height="156" Width="400" FontSize="40" RenderTransformOrigin="0.5,0.5" Padding="0,50,0,0" UseLayoutRounding="True" FontWeight="Bold" TextAlignment="Center">
+        <TextBlock Name="MyFadingText"
+                   HorizontalAlignment="Left" 
+                   Margin="0,484,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="" 
+                   VerticalAlignment="Top" Height="156"
+                   Width="400" FontSize="40" 
+                   RenderTransformOrigin="0.5,0.5"
+                   Padding="0,40,0,0" 
+                   UseLayoutRounding="True" 
+                   FontWeight="Bold" 
+                   TextAlignment="Center">
             <TextBlock.Foreground>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/fire2.jpg"/>
             </TextBlock.Foreground>
@@ -52,7 +75,7 @@
                             <DoubleAnimation
             Storyboard.TargetName="MyFadingText" 
             Storyboard.TargetProperty="(TextBlock.Opacity)"
-            From="1.0" To="0.3" Duration="0:0:3" 
+            From="1.0" To="0.2" Duration="0:0:3" 
             AutoReverse="True" RepeatBehavior="Forever" />
                         </Storyboard>
                     </BeginStoryboard>

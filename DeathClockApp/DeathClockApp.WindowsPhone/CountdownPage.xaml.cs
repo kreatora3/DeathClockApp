@@ -40,6 +40,10 @@ namespace DeathClockApp
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             seconds =(long)e.Parameter;
+            if (seconds >= 0)
+            {
+                MyFadingText.Text = "Enjoy your life !";
+            }
         }
 
         
@@ -59,6 +63,7 @@ namespace DeathClockApp
             if (seconds < 0)
             {
                 countdownTimer.Text = "You are out of life :(";
+                MyFadingText.Text = "Sorry";
             }
             else
             {
