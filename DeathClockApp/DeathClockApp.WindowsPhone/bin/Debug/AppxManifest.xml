@@ -49,6 +49,7 @@
   <Capabilities>
     <Capability Name="internetClientServer" />
     <Capability Name="musicLibrary" />
+    <DeviceCapability Name="location" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="38842894-9c0c-4fc6-b4ba-bbe74393d109" />

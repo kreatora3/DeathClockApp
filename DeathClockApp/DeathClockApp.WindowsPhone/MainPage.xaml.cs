@@ -54,7 +54,7 @@ namespace DeathClockApp
             else if (ageTextBox.Text != string.Empty)
             {
                 sp.PlayMedia("ms-appx:///sounds/door.mp3");
-                Frame.Navigate(typeof(QuestionPage), ageTextBox.Text);
+                Frame.Navigate(typeof(EmailPage), ageTextBox.Text);
             }
             else
             {

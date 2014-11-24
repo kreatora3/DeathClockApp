@@ -43,5 +43,6 @@
   <Capabilities>
     <Capability Name="internetClientServer" />
     <Capability Name="musicLibrary" />
+    <DeviceCapability Name="location" />
   </Capabilities>
 </Package>

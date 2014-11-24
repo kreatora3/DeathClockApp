@@ -83,6 +83,9 @@
     <Compile Include="CountdownPage.xaml.cs">
       <DependentUpon>CountdownPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EmailPage.xaml.cs">
+      <DependentUpon>EmailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Life.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -123,6 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="CountdownPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
