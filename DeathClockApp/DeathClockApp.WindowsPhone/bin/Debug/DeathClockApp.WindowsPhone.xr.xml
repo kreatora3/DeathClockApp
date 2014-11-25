@@ -65,7 +65,9 @@
       <RootProperty Name="Name" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="Triggers" />
+      <RootProperty Name="IsColorFontEnabled" />
       <RootProperty Name="LineHeight" />
+      <RootEvent Name="DoubleTapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />

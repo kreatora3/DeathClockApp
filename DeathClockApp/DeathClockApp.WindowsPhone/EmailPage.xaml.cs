@@ -30,7 +30,7 @@ namespace DeathClockApp
         object mainPageAge;
         NotificationHelper dialog;
         Users user = new Users();
-
+        
         public EmailPage()
         {
             this.InitializeComponent();
@@ -51,10 +51,12 @@ namespace DeathClockApp
         {
             ring.IsActive = true;
             Geoposition position = await GetLocation();
+          
             user.Latitude = position.Coordinate.Latitude;
             user.Longtitude = position.Coordinate.Longitude;
             user.Email = emailInputField.Text;
             await user.SaveAsync();
+           
             Frame.Navigate(typeof(QuestionPage), mainPageAge);
            
             

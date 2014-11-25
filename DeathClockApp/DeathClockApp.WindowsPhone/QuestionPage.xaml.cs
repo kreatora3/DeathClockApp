@@ -21,9 +21,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace DeathClockApp
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+   
     public sealed partial class QuestionPage : Page
     {
       
@@ -36,11 +34,6 @@ namespace DeathClockApp
         private int lifeDeduction;
         private int lifeExpectancy;
         
-        // pravq si pole list ot Questions  <-- ako ne e statichen si pravq pole <---
-        // promenliva Question currentQuestion;
-        // int currentIndex = 0;
-        // metod za buton next question => pri klik currentIndex++ 
-        // if( currentIndex < listofQuestion.Count()){ currentQuestion = listofquestons[cyrrentindex]
 
         public QuestionPage()
         {
@@ -55,11 +48,6 @@ namespace DeathClockApp
             
         }
 
-        /// <summary>
-        /// Invoked when this page is about to be displayed in a Frame.
-        /// </summary>
-        /// <param name="e">Event data that describes how this page was reached.
-        /// This parameter is typically used to configure the page.</param>
         protected  override void OnNavigatedTo(NavigationEventArgs e)
         {
             age = e.Parameter.ToString();

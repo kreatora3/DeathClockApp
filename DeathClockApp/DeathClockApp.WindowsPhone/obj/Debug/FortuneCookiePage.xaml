@@ -9,6 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock x:ConnectionId='1' 
+            x:Name="fortuneCookieTB"
+            HorizontalAlignment="Left"
+            Margin="0,107,0,0"                    
+            TextWrapping="Wrap" 
+            Text="Knock. Knock" 
+            VerticalAlignment="Top" 
+            Height="353" Width="400"
+                                                  
+            FontSize="25" MaxLines="10"
+            IsColorFontEnabled="False" TextAlignment="Center" Padding="10,50,10,0"/>
+        <TextBlock x:Name="authorTB" HorizontalAlignment="Left" Margin="205,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="185" RenderTransformOrigin="0.373,-1.319" FontSize="20" Padding="10,10,0,0"/>
 
     </Grid>
 </Page>

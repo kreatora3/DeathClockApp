@@ -39,7 +39,7 @@ namespace DeathClockApp
 
         private void StackPanel_Holding(object sender, HoldingRoutedEventArgs e)
         {
-            PhoneCallManager.ShowPhoneCallUI(this.Phone.Text, "Vanga");
+            PhoneCallManager.ShowPhoneCallUI(this.Phone.Text, "Fortune Teller");
         }
 
         private void DrawCookieBtn_Click(object sender, RoutedEventArgs e)
