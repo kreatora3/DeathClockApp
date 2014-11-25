@@ -41,7 +41,7 @@ namespace DeathClockApp
         {
         }
 
-        private  void TextBlock_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        private void Image_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
             cookie = cookieList.Cookies[GetRandom(0, cookieList.Cookies.Count - 1)];
             string text = cookie.Content;
@@ -57,5 +57,7 @@ namespace DeathClockApp
             index = rand.Next(min, max);
             return index;
         }
+
+      
     }
 }

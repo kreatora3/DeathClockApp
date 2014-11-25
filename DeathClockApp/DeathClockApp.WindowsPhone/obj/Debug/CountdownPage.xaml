@@ -14,7 +14,7 @@
                    Margin="0,281,0,0" 
                    TextWrapping="Wrap"
                    VerticalAlignment="Top" 
-                   Height="115" 
+                   Height="190" 
                    Width="400" 
                    FontSize="50"
                    TextAlignment="Center" 
@@ -55,11 +55,11 @@
         </TextBlock>
         <TextBlock Name="MyFadingText"
                    HorizontalAlignment="Left" 
-                   Margin="0,472,0,0" 
+                   Margin="0,471,-10,0" 
                    TextWrapping="Wrap" 
                    Text="" 
-                   VerticalAlignment="Top" Height="168"
-                   Width="400" FontSize="40" 
+                   VerticalAlignment="Top" Height="104"
+                   Width="410" FontSize="40" 
                    RenderTransformOrigin="0.5,0.5"
                    Padding="0,40,0,0" 
                    UseLayoutRounding="True" 
@@ -82,7 +82,7 @@
                 </EventTrigger>
             </TextBlock.Triggers>
         </TextBlock>
-        <Button x:ConnectionId='2' Content="Button" HorizontalAlignment="Left" Margin="0,386,-28,0" VerticalAlignment="Top" Height="95" Width="428"                     />
+        <Button x:ConnectionId='2' Content="Want more ?" HorizontalAlignment="Left" Margin="0,566,0,-10" VerticalAlignment="Top" Height="84" Width="400"                      FontSize="25" FontWeight="Bold"/>
 
 
 

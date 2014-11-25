@@ -9,18 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:ConnectionId='1' 
+        <TextBlock 
             x:Name="fortuneCookieTB"
             HorizontalAlignment="Left"
-            Margin="0,107,0,0"                    
+            Margin="0,277,-10,0"                    
             TextWrapping="Wrap" 
-            Text="Knock. Knock" 
             VerticalAlignment="Top" 
-            Height="353" Width="400"
-                                                  
+            Height="363" Width="410" 
             FontSize="25" MaxLines="10"
             IsColorFontEnabled="False" TextAlignment="Center" Padding="10,50,10,0"/>
-        <TextBlock x:Name="authorTB" HorizontalAlignment="Left" Margin="205,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="185" RenderTransformOrigin="0.373,-1.319" FontSize="20" Padding="10,10,0,0"/>
+        <TextBlock x:Name="authorTB" HorizontalAlignment="Left" Margin="182,556,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="185" RenderTransformOrigin="0.373,-1.319" FontSize="20" Padding="10,10,0,0"/>
+        <Image x:ConnectionId='1' HorizontalAlignment="Center" Height="165" Margin="142,112,137,0" VerticalAlignment="Top" Width="121" Source="Assets/door.jpg"                                  />
+        <TextBlock HorizontalAlignment="Center" Margin="122,59,113,0" TextWrapping="Wrap" Text="Knock, Knock" VerticalAlignment="Top" Height="48" Width="165" FontSize="25" TextAlignment="Center" Padding="0,10,0,0"/>
 
     </Grid>
 </Page>
