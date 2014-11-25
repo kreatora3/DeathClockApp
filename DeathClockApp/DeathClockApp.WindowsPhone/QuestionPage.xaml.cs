@@ -32,7 +32,9 @@ namespace DeathClockApp
         private string age;
         private Question currentQuestion;
         private int currentIndex;
-        ListOfQuestions questions;
+        private ListOfQuestions questions;
+        private int lifeDeduction;
+        private int lifeExpectancy;
         
         // pravq si pole list ot Questions  <-- ako ne e statichen si pravq pole <---
         // promenliva Question currentQuestion;
@@ -48,6 +50,9 @@ namespace DeathClockApp
             this.currentIndex = 0;
             this.currentQuestion = new Question(string.Empty);
             this.questions = new ListOfQuestions();
+            this.lifeDeduction = 2;
+            this.lifeExpectancy = 1;
+            
         }
 
         /// <summary>
@@ -61,7 +66,44 @@ namespace DeathClockApp
             headerTextBlock.Text = "So you are ... " + age + " years old";
         }
 
-        
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    bool isTabacoUser = false;
+        //    bool isAlchohilUser = false;
+
+        //    var btnDrinkingYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "drinkingYes");
+        //    var btnDrinkingNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name ==  "drinkingNo");
+        //    var btnTabacoYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoYes");
+        //    var btnTabacoNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoNo");
+            
+        //    if (btnDrinkingYes.IsChecked == true)
+        //    {
+        //        isAlchohilUser = true;
+        //    }
+
+        //    if (btnTabacoYes.IsChecked == true)
+        //    {
+        //        isTabacoUser = true;
+        //    }
+
+        //    if (btnDrinkingYes.IsChecked != true && btnDrinkingNo.IsChecked != true)
+        //    {
+        //        ShowMessageBox("Make sure you've answered both questions", "Warning");
+        //    }
+        //    else if (btnTabacoYes.IsChecked != true && btnTabacoNo.IsChecked != true)
+        //    {
+        //        ShowMessageBox("Make sure you've answered both questions", "Warning");
+        //    }
+        //    else
+        //    {
+        //        //long secondsToDisplay = life.CalculateTimeToTheEnd(age, isAlchohilUser, isTabacoUser);
+
+        //        sp.PlayMedia("ms-appx:///sounds/laugh.mp3");
+        //        Frame.Navigate(typeof(CountdownPage), secondsToDisplay);
+        //    }
+           
+           
+        //}
 
         private void ShowMessageBox(string message, string title)
         {
@@ -78,46 +120,42 @@ namespace DeathClockApp
             msgDialog.ShowAsync();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void YesBtn_Click(object sender, RoutedEventArgs e)
         {
-            bool isTabacoUser = false;
-            bool isAlchohilUser = false;
-
-            var btnDrinkingYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "drinkingYes");
-            var btnDrinkingNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name ==  "drinkingNo");
-            var btnTabacoYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoYes");
-            var btnTabacoNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoNo");
             
-            if (btnDrinkingYes.IsChecked == true)
+            if (this.currentIndex < 4)
             {
-                isAlchohilUser = true;
-            }
-
-            if (btnTabacoYes.IsChecked == true)
-            {
-                isTabacoUser = true;
-            }
-
-            if (btnDrinkingYes.IsChecked != true && btnDrinkingNo.IsChecked != true)
-            {
-                ShowMessageBox("Make sure you've answered both questions", "Warning");
-            }
-            else if (btnTabacoYes.IsChecked != true && btnTabacoNo.IsChecked != true)
-            {
-                ShowMessageBox("Make sure you've answered both questions", "Warning");
+                currentQuestion = questions.Questions[this.currentIndex];
+                QuestionContainer.Text = currentQuestion.Content;
+                this.currentIndex++;
+               // age += lifeDeduction;
             }
             else
             {
-                long secondsToDisplay = life.CalculateTimeToTheEnd(age, isAlchohilUser, isTabacoUser);
+                long secondsToDisplay = life.CalculateTimeToTheEnd(age);
 
                 sp.PlayMedia("ms-appx:///sounds/laugh.mp3");
                 Frame.Navigate(typeof(CountdownPage), secondsToDisplay);
             }
-           
-           
         }
 
-      
+        private void NoBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.currentIndex < 4)
+            {
+                currentQuestion = questions.Questions[this.currentIndex];
+                QuestionContainer.Text = currentQuestion.Content;
+                this.currentIndex++;
+               // age -= lifeExpectancy;
+            }
+            else
+            {
+                long secondsToDisplay = life.CalculateTimeToTheEnd(age);
+
+                sp.PlayMedia("ms-appx:///sounds/laugh.mp3");
+                Frame.Navigate(typeof(CountdownPage), secondsToDisplay);
+            }
+        }
 
        
     }

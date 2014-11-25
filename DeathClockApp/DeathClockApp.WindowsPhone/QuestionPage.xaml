@@ -47,86 +47,9 @@
             Margin="0"
             Padding="0, 50, 0, 0"
             />
-
-        <TextBlock HorizontalAlignment="Left"
-                   Margin="10,0,0,0" 
-                   Grid.Row="2" 
-                   TextWrapping="Wrap" 
-                   Text="Do you smoke ?" 
-                   VerticalAlignment="Top" 
-                   Height="34" Width="390"
-                   Grid.ColumnSpan="2" 
-                   RenderTransformOrigin="0.521,-1.276"
-                   FontSize="25" FontStyle="Italic"/>
-
-        <RadioButton x:Name="tabacoYes" Content="Yes"
-                     HorizontalAlignment="Left" 
-                     Margin="0,56,0,0" 
-                     Grid.Row="2" 
-                     VerticalAlignment="Top" 
-                     Width="200"
-                     FontSize="17" 
-                     Background="Transparent"
-                     GroupName="smoking"/>
-
-        <RadioButton x:Name="tabacoNo" Content="No"
-                     HorizontalAlignment="Left" 
-                     Margin="0,117,0,0" 
-                     Grid.Row="2"
-                     VerticalAlignment="Top"
-                     Width="200" 
-                     FontSize="17"
-                      GroupName="smoking"/>
-
-        <Image HorizontalAlignment="Left" 
-               Height="40" Margin="10.073,71.132,0,0" 
-               Grid.Row="2" VerticalAlignment="Top" 
-               Width="40" Source="Assets/allowSmoking.jpg"
-               RenderTransformOrigin="0.5,0.5" 
-               UseLayoutRounding="False" d:LayoutRounding="Auto" 
-               Stretch="Fill" Grid.Column="1">
-            <Image.RenderTransform>
-                <CompositeTransform Rotation="1.228"/>
-            </Image.RenderTransform>
-        </Image>
-        <Image Grid.Column="1" 
-               HorizontalAlignment="Left"
-               Height="40" Margin="10,133,0,0"
-               Grid.Row="2" VerticalAlignment="Top"
-               Width="40" 
-               RenderTransformOrigin="-0.481,0.288"
-               Source="Assets/noSmoking.jpg"/>
-
-        <TextBlock HorizontalAlignment="Left"
-                   Margin="0,200,0,0" 
-                   Grid.Row="2" 
-                   TextWrapping="Wrap" 
-                   Text="Do you drink ?"
-                   VerticalAlignment="Top" 
-                   Grid.ColumnSpan="2" 
-                   Height="40" Width="400"                    
-                   FontStyle="Italic"
-                   FontSize="25"/>
-
-        <RadioButton x:Name="drinkingYes" Content="Yes"
-                     HorizontalAlignment="Left"
-                     Margin="0,245,0,0" 
-                     Grid.Row="2" 
-                     VerticalAlignment="Top"
-                     Width="200"
-                      GroupName="drinking"/>
-
-        <RadioButton x:Name="drinkingNo" Content="No" 
-                     HorizontalAlignment="Left"                     
-                     Margin="0,306,0,0" 
-                     Grid.Row="2"
-                     VerticalAlignment="Top"
-                     Width="200"
-                     GroupName="drinking"/>
-
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="10,261,0,0" Grid.Row="2" VerticalAlignment="Top" Width="40" Source="Assets/wine-glass-003.jpg"/>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="10,322,0,0" Grid.Row="2" VerticalAlignment="Top" Width="40" Source="Assets/water-glass.jpg" RenderTransformOrigin="-1.094,0.146" Stretch="Fill"/>
-        <Button Content="Dare to calculate ... ?" HorizontalAlignment="Left" Margin="95,409,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="213" Height="54" Background="Transparent" BorderBrush="#33FFFFFF" FontStyle="Italic" Click="Button_Click"/>
+        <TextBlock x:Name="QuestionContainer" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="195" Width="400" FontSize="35" FontWeight="Bold" TextAlignment="Center" Padding="0,80,0,0"/>
+        <Button x:Name="NoBtn" Content="No" Grid.Column="1" HorizontalAlignment="Left" Margin="34,269,0,0" Grid.Row="2" VerticalAlignment="Top" BorderBrush="#B2FFFFFF" Click="NoBtn_Click"/>
+        <Button x:Name="YesBtn" Content="Yes" HorizontalAlignment="Left" Margin="39,269,0,0" Grid.Row="2" VerticalAlignment="Top" BorderBrush="#B2FFFFFF" Click="YesBtn_Click"/>
 
     </Grid>
 </Page>

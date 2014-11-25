@@ -10,16 +10,13 @@ namespace DeathClockApp
     {
         private const int maxLifeExpectancy = 120;
         private const int averageLifeExpectancy = 85;
-        private const int tabacoDamage = 3;
-        private const int alchoholDamage = 2;
-
 
         public Life()
         {
             
         }
 
-        public long CalculateTimeToTheEnd(string age, bool usesTabaco, bool usesAlchohol)
+        public long CalculateTimeToTheEnd(string age)
         {
             int ageAsInt = 0;
             int personalLifeLimit = 0;
@@ -36,17 +33,6 @@ namespace DeathClockApp
                 personalLifeLimit = new Random().Next(averageLifeExpectancy, maxLifeExpectancy);
             }
             int yearsLeft = personalLifeLimit - ageAsInt;
-
-
-            if (usesTabaco)
-            {
-                yearsLeft -= tabacoDamage;
-            }
-
-            if (usesAlchohol)
-            {
-                yearsLeft -= alchoholDamage;
-            }
 
             
             int days = 365;
