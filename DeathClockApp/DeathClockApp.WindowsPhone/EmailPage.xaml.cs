@@ -17,6 +17,7 @@ using DeathClockApp.DataModel;
 using Windows.Devices.Geolocation;
 using Windows.UI.Popups;
 using System.Threading.Tasks;
+using DeathClockApp.Utils;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -30,6 +31,7 @@ namespace DeathClockApp
         object mainPageAge;
         NotificationHelper dialog;
         Users user = new Users();
+        EmailValidator validator;
         
         public EmailPage()
         {
@@ -37,29 +39,31 @@ namespace DeathClockApp
             this.dialog = new NotificationHelper();
         }
 
-        /// <summary>
-        /// Invoked when this page is about to be displayed in a Frame.
-        /// </summary>
-        /// <param name="e">Event data that describes how this page was reached.
-        /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
              mainPageAge = e.Parameter;
+             validator = new EmailValidator();
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            ring.IsActive = true;
-            Geoposition position = await GetLocation();
-          
-            user.Latitude = position.Coordinate.Latitude;
-            user.Longtitude = position.Coordinate.Longitude;
-            user.Email = emailInputField.Text;
-            await user.SaveAsync();
-           
-            Frame.Navigate(typeof(QuestionPage), mainPageAge);
-           
-            
+            bool isValid = validator.IsValidEmail(emailInputField.Text);
+            if (isValid)
+            {
+                ring.IsActive = true;
+                Geoposition position = await GetLocation();
+
+                user.Latitude = position.Coordinate.Latitude;
+                user.Longtitude = position.Coordinate.Longitude;
+                user.Email = emailInputField.Text;
+                await user.SaveAsync();
+
+                Frame.Navigate(typeof(QuestionPage), mainPageAge);
+            }
+            else
+            {
+                dialog.ShowMessageBox("Provide valid mail", "Please");
+            }
         }
 
         private async Task<Geoposition> GetLocation()
