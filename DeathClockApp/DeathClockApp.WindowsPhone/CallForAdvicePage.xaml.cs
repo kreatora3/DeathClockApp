@@ -21,16 +21,11 @@ namespace DeathClockApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class CountdownPage : Page
+    public sealed partial class CallForAdvicePage : Page
     {
-        private long seconds;
-        DispatcherTimer dispatch;
-       
-
-        public CountdownPage()
+        public CallForAdvicePage()
         {
             this.InitializeComponent();
-            this.dispatch = new DispatcherTimer();
         }
 
         /// <summary>
@@ -40,48 +35,16 @@ namespace DeathClockApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            seconds =(long)e.Parameter;
-            if (seconds >= 0)
-            {
-                MyFadingText.Text = "Enjoy your life !";
-            }
         }
 
-        
-        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        private void StackPanel_Holding(object sender, HoldingRoutedEventArgs e)
         {
-            if (!dispatch.IsEnabled)
-            {
-                dispatch.Tick += dispatch_Tick;
-                dispatch.Interval = new TimeSpan(0, 0, 1);
-                dispatch.Start();
-            }
+            PhoneCallManager.ShowPhoneCallUI(this.Phone.Text, "Vanga");
         }
 
-        void dispatch_Tick(object sender, object e)
+        private void DrawCookieBtn_Click(object sender, RoutedEventArgs e)
         {
-            seconds--;
-            if (seconds < 0)
-            {
-                countdownTimer.Text = "You are out of life :(";
-                MyFadingText.Text = "Sorry";
-            }
-            else
-            {
-                countdownTimer.Text = "" + seconds;
-            }
-           
+            Frame.Navigate(typeof(FortuneCookiePage));
         }
-
-      
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(CallForAdvicePage));
-        }
-
-     
-
-        
     }
 }

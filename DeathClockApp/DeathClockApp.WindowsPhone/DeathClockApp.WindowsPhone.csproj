@@ -80,11 +80,17 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CallForAdvicePage.xaml.cs">
+      <DependentUpon>CallForAdvicePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CountdownPage.xaml.cs">
       <DependentUpon>CountdownPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="EmailPage.xaml.cs">
       <DependentUpon>EmailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FortuneCookiePage.xaml.cs">
+      <DependentUpon>FortuneCookiePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Life.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -107,6 +113,7 @@
     <Content Include="Assets\cemetary-gates.jpg" />
     <Content Include="Assets\FIre.jpg" />
     <Content Include="Assets\fire2.jpg" />
+    <Content Include="Assets\fortune-teller.jpg" />
     <Content Include="Assets\halloween_at_the_graveyard.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\Logo.scale-240.png" />
@@ -126,11 +133,19 @@
     <Content Include="sounds\welcome.mp3" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="CallForAdvicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CountdownPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EmailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FortuneCookiePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

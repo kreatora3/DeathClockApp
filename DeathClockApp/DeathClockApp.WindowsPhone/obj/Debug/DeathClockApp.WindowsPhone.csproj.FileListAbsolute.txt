@@ -49,3 +49,13 @@ C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathCloc
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\EmailPage.g.cs
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\EmailPage.xaml
 C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\EmailPage.xbf
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\CallForAdvicePage.xbf
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CallForAdvicePage.g.i.cs
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CallForAdvicePage.g.cs
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CallForAdvicePage.xaml
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\CallForAdvicePage.xbf
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\bin\Debug\FortuneCookiePage.xbf
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\FortuneCookiePage.g.i.cs
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\FortuneCookiePage.g.cs
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\FortuneCookiePage.xaml
+C:\Users\kreatora3\Documents\Visual Studio 2013\Projects\DeathClockApp\DeathClockApp\DeathClockApp.WindowsPhone\obj\Debug\FortuneCookiePage.xbf

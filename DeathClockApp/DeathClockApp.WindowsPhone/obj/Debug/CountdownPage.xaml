@@ -82,22 +82,8 @@
                 </EventTrigger>
             </TextBlock.Triggers>
         </TextBlock>
-        <StackPanel x:ConnectionId='2' 
-            HorizontalAlignment="Left"
-            Height="76" Margin="0,396,0,0" 
-            VerticalAlignment="Top"
-            Width="400"
-            Orientation="Horizontal"
-                                        >
-            <TextBlock Text="Call for advice: "
-                       Style="{ThemeResource SubheaderTextBlockStyle}" 
-                       VerticalAlignment="Center" Margin="10"/>
-            <TextBlock x:Name="Phone"
-                       Text="0882 880 885"                       
-                       Style="{ThemeResource SubheaderTextBlockStyle}" 
-                       VerticalAlignment="Center" Margin="10"/>
+        <Button x:ConnectionId='2' Content="Button" HorizontalAlignment="Left" Margin="0,386,-28,0" VerticalAlignment="Top" Height="95" Width="428"                     />
 
-        </StackPanel>
 
 
     </Grid>

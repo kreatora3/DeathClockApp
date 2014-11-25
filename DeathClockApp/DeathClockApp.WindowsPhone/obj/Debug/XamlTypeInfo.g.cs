@@ -124,21 +124,25 @@ namespace DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
-            _typeNameTable[0] = "DeathClockApp.CountdownPage";
+            _typeNameTable = new string[8];
+            _typeNameTable[0] = "DeathClockApp.CallForAdvicePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "DeathClockApp.EmailPage";
-            _typeNameTable[4] = "DeathClockApp.MainPage";
-            _typeNameTable[5] = "DeathClockApp.QuestionPage";
+            _typeNameTable[3] = "DeathClockApp.CountdownPage";
+            _typeNameTable[4] = "DeathClockApp.EmailPage";
+            _typeNameTable[5] = "DeathClockApp.FortuneCookiePage";
+            _typeNameTable[6] = "DeathClockApp.MainPage";
+            _typeNameTable[7] = "DeathClockApp.QuestionPage";
 
-            _typeTable = new global::System.Type[6];
-            _typeTable[0] = typeof(global::DeathClockApp.CountdownPage);
+            _typeTable = new global::System.Type[8];
+            _typeTable[0] = typeof(global::DeathClockApp.CallForAdvicePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::DeathClockApp.EmailPage);
-            _typeTable[4] = typeof(global::DeathClockApp.MainPage);
-            _typeTable[5] = typeof(global::DeathClockApp.QuestionPage);
+            _typeTable[3] = typeof(global::DeathClockApp.CountdownPage);
+            _typeTable[4] = typeof(global::DeathClockApp.EmailPage);
+            _typeTable[5] = typeof(global::DeathClockApp.FortuneCookiePage);
+            _typeTable[6] = typeof(global::DeathClockApp.MainPage);
+            _typeTable[7] = typeof(global::DeathClockApp.QuestionPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -173,10 +177,12 @@ namespace DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_CountdownPage() { return new global::DeathClockApp.CountdownPage(); }
-        private object Activate_3_EmailPage() { return new global::DeathClockApp.EmailPage(); }
-        private object Activate_4_MainPage() { return new global::DeathClockApp.MainPage(); }
-        private object Activate_5_QuestionPage() { return new global::DeathClockApp.QuestionPage(); }
+        private object Activate_0_CallForAdvicePage() { return new global::DeathClockApp.CallForAdvicePage(); }
+        private object Activate_3_CountdownPage() { return new global::DeathClockApp.CountdownPage(); }
+        private object Activate_4_EmailPage() { return new global::DeathClockApp.EmailPage(); }
+        private object Activate_5_FortuneCookiePage() { return new global::DeathClockApp.FortuneCookiePage(); }
+        private object Activate_6_MainPage() { return new global::DeathClockApp.MainPage(); }
+        private object Activate_7_QuestionPage() { return new global::DeathClockApp.QuestionPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -188,9 +194,9 @@ namespace DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  DeathClockApp.CountdownPage
+            case 0:   //  DeathClockApp.CallForAdvicePage
                 userType = new global::DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_CountdownPage;
+                userType.Activator = Activate_0_CallForAdvicePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -203,23 +209,37 @@ namespace DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo
                 xamlType = new global::DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  DeathClockApp.EmailPage
+            case 3:   //  DeathClockApp.CountdownPage
                 userType = new global::DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_EmailPage;
+                userType.Activator = Activate_3_CountdownPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  DeathClockApp.MainPage
+            case 4:   //  DeathClockApp.EmailPage
                 userType = new global::DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_EmailPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  DeathClockApp.QuestionPage
+            case 5:   //  DeathClockApp.FortuneCookiePage
                 userType = new global::DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_QuestionPage;
+                userType.Activator = Activate_5_FortuneCookiePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  DeathClockApp.MainPage
+                userType = new global::DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  DeathClockApp.QuestionPage
+                userType = new global::DeathClockApp.DeathClockApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_QuestionPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

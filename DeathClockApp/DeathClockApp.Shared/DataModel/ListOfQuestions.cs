@@ -15,8 +15,8 @@ namespace DeathClockApp.DataModel
                 return new List<Question>() { 
                  new Question("Do you smoke"), 
                  new Question("Do you drink"), 
-                 new Question("Do you sport"),
-                 new Question("Do you like junk food") };
+                 new Question("Do you hate sport"),
+                 new Question("Do you love junk food") };
             }
         }
     }

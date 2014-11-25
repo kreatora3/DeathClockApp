@@ -64,46 +64,11 @@ namespace DeathClockApp
         {
             age = e.Parameter.ToString();
             headerTextBlock.Text = "So you are ... " + age + " years old";
+            currentQuestion = questions.Questions[this.currentIndex];
+            QuestionContainer.Text = currentQuestion.Content;
+            YesBtn.Content = YesBtnAnswer(currentIndex);
+            this.currentIndex++;
         }
-
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    bool isTabacoUser = false;
-        //    bool isAlchohilUser = false;
-
-        //    var btnDrinkingYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "drinkingYes");
-        //    var btnDrinkingNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name ==  "drinkingNo");
-        //    var btnTabacoYes = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoYes");
-        //    var btnTabacoNo = QuestionPageGrid.Children.OfType<RadioButton>().FirstOrDefault(b => b.Name == "tabacoNo");
-            
-        //    if (btnDrinkingYes.IsChecked == true)
-        //    {
-        //        isAlchohilUser = true;
-        //    }
-
-        //    if (btnTabacoYes.IsChecked == true)
-        //    {
-        //        isTabacoUser = true;
-        //    }
-
-        //    if (btnDrinkingYes.IsChecked != true && btnDrinkingNo.IsChecked != true)
-        //    {
-        //        ShowMessageBox("Make sure you've answered both questions", "Warning");
-        //    }
-        //    else if (btnTabacoYes.IsChecked != true && btnTabacoNo.IsChecked != true)
-        //    {
-        //        ShowMessageBox("Make sure you've answered both questions", "Warning");
-        //    }
-        //    else
-        //    {
-        //        //long secondsToDisplay = life.CalculateTimeToTheEnd(age, isAlchohilUser, isTabacoUser);
-
-        //        sp.PlayMedia("ms-appx:///sounds/laugh.mp3");
-        //        Frame.Navigate(typeof(CountdownPage), secondsToDisplay);
-        //    }
-           
-           
-        //}
 
         private void ShowMessageBox(string message, string title)
         {
@@ -126,7 +91,9 @@ namespace DeathClockApp
             if (this.currentIndex < 4)
             {
                 currentQuestion = questions.Questions[this.currentIndex];
+                YesBtn.Content = YesBtnAnswer(currentIndex);
                 QuestionContainer.Text = currentQuestion.Content;
+
                 this.currentIndex++;
                // age += lifeDeduction;
             }
@@ -144,6 +111,7 @@ namespace DeathClockApp
             if (this.currentIndex < 4)
             {
                 currentQuestion = questions.Questions[this.currentIndex];
+                YesBtn.Content = YesBtnAnswer(currentIndex);
                 QuestionContainer.Text = currentQuestion.Content;
                 this.currentIndex++;
                // age -= lifeExpectancy;
@@ -157,6 +125,17 @@ namespace DeathClockApp
             }
         }
 
-       
+        private string YesBtnAnswer(int index)
+        {
+            switch (index)
+            {
+                case 0: return "I smoke";
+                case 1: return "I drink";
+                case 2: return "I do";
+                case 3: return "Love it";
+                default: return "Yes";
+            }
+                    
+        }
     }
 }

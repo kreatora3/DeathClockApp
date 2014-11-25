@@ -48,8 +48,8 @@
             Padding="0, 50, 0, 0"
             />
         <TextBlock x:Name="QuestionContainer" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="195" Width="400" FontSize="35" FontWeight="Bold" TextAlignment="Center" Padding="0,80,0,0"/>
-        <Button x:Name="NoBtn" Content="No" Grid.Column="1" HorizontalAlignment="Left" Margin="34,269,0,0" Grid.Row="2" VerticalAlignment="Top" BorderBrush="#B2FFFFFF" Click="NoBtn_Click"/>
-        <Button x:Name="YesBtn" Content="Yes" HorizontalAlignment="Left" Margin="39,269,0,0" Grid.Row="2" VerticalAlignment="Top" BorderBrush="#B2FFFFFF" Click="YesBtn_Click"/>
+        <Button x:Name="NoBtn" Content="No" Grid.Column="1" HorizontalAlignment="Left" Margin="0,269,0,0" Grid.Row="2" VerticalAlignment="Top" BorderBrush="#B2FFFFFF" Click="NoBtn_Click" Width="200" Background="#FF5BB826" FontSize="20" Height="78"/>
+        <Button x:Name="YesBtn" Content="Yes" HorizontalAlignment="Left" Margin="0,269,0,0" Grid.Row="2" VerticalAlignment="Top" BorderBrush="#B2FFFFFF" Click="YesBtn_Click" Width="200" Background="#FFB80919" FontSize="20" Height="78"/>
 
     </Grid>
 </Page>
