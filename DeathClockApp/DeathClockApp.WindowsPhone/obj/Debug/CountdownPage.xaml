@@ -93,7 +93,7 @@
                        Style="{ThemeResource SubheaderTextBlockStyle}" 
                        VerticalAlignment="Center" Margin="10"/>
             <TextBlock x:Name="Phone"
-                       Text="0882 880 885"
+                       Text="0882 880 885"                       
                        Style="{ThemeResource SubheaderTextBlockStyle}" 
                        VerticalAlignment="Center" Margin="10"/>
 

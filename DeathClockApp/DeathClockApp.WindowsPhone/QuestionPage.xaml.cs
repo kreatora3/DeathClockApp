@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeathClockApp.DataModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,15 +26,28 @@ namespace DeathClockApp
     /// </summary>
     public sealed partial class QuestionPage : Page
     {
+      
         private SoundPlayer sp;
         private Life life;
         private string age;
+        private Question currentQuestion;
+        private int currentIndex;
+        ListOfQuestions questions;
+        
+        // pravq si pole list ot Questions  <-- ako ne e statichen si pravq pole <---
+        // promenliva Question currentQuestion;
+        // int currentIndex = 0;
+        // metod za buton next question => pri klik currentIndex++ 
+        // if( currentIndex < listofQuestion.Count()){ currentQuestion = listofquestons[cyrrentindex]
 
         public QuestionPage()
         {
             this.InitializeComponent();
             this.sp = new SoundPlayer();
             this.life = new Life();
+            this.currentIndex = 0;
+            this.currentQuestion = new Question(string.Empty);
+            this.questions = new ListOfQuestions();
         }
 
         /// <summary>

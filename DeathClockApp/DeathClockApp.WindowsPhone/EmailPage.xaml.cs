@@ -49,6 +49,7 @@ namespace DeathClockApp
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            ring.IsActive = true;
             Geoposition position = await GetLocation();
             user.Latitude = position.Coordinate.Latitude;
             user.Longtitude = position.Coordinate.Longitude;
